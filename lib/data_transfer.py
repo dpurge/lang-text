@@ -7,5 +7,9 @@ Language = collections.namedtuple('Language',[
     'documents'])
 
 Document = collections.namedtuple('Document',[
+    'format',
+    'version',
+    'language',
+    'tags',
     'directory',
     'files'])

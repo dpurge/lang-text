@@ -21,4 +21,8 @@ def build(c, language = '*', translation = 'pol'):
     for lang in get_language(directory=src_dir, language = language):
         print("[{lang.code}] {lang.name}: {lang.directory}".format(lang = lang))
         for doc in lang.documents:
-            print(doc.directory)
+            print("  - {filename}".format(
+                filename = export_document(
+                    document = doc,
+                    tmpdir = tmp_dir,
+                    outdir = out_dir)))
