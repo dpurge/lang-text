@@ -6,6 +6,10 @@
 {%- block style %}{% endblock %}
 </head>
 <body>
+<header>
+<div id="document-title">{{document.title}}</div>
+<div id="document-subtitle">{{document.subtitle}}</div>
+</header>
 {% for article in data %}
 <article>
 <section class="text">
@@ -17,7 +21,7 @@
 <h2>Vocabulary</h2>
 <dl>
 {% for item in article.vocabulary %}
-<dt>{{item.phrase}}{% if item.lexcat %} [{{item.lexcat}}]{% endif %}{% if item.transcription %} ({{item.transcription}}){% endif %}</dt>
+<dt>{{item.phrase}}{% if item.lexcat %} <b>{{item.lexcat}}</b>{% endif %}{% if item.transcription %} <i>{{item.transcription}}</i>{% endif %}</dt>
 <dd>{{item.translation}}</dd>
 {% endfor %}
 </dl>

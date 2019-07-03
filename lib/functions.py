@@ -4,6 +4,7 @@ import glob
 import json
 import markdown
 import jinja2
+import datetime
 
 from weasyprint import HTML
 #from weasyprint import CSS
@@ -45,6 +46,8 @@ def get_document(directory):
         files = glob.glob(
             os.path.join(dir, '*.md'), recursive=False)
         yield Document(
+            title = doc['data']['title'],
+            subtitle = doc.get('data').get('subtitle'),
             format = doc['meta']['format'],
             version = doc['meta']['version'],
             language = doc['meta']['language'],
@@ -87,7 +90,10 @@ def export_document(document, directory, translation):
     document_template = templateEnv.get_template(
         "{language}-document.html".format(
             language = document.language))
-    html = HTML(string = document_template.render(data = data))
+    html = HTML(
+        string = document_template.render(
+            document = document,
+            data = data))
     
     if not os.path.exists(directory): os.makedirs(directory)
     outfile = os.path.join(directory,
