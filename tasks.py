@@ -24,4 +24,5 @@ def build(c, language = '*', translation = 'pol'):
             print("  - {filename}".format(
                 filename = export_document(
                     document = doc,
-                    directory = os.path.join(out_dir, lang.code))))
+                    directory = os.path.join(out_dir, lang.code),
+                    translation = translation)))

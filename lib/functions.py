@@ -52,7 +52,7 @@ def get_document(directory):
             directory = dir,
             files = files)
             
-def export_document(document, directory):
+def export_document(document, directory, translation):
     
     templateLoader = jinja2.FileSystemLoader(
         searchpath=os.path.join(
@@ -66,13 +66,18 @@ def export_document(document, directory):
             text = md.convert(f.read())
         
         meta = None
-        vocabulary = None
+        vocabulary = []
         json_file = '{name}.json'.format(name = os.path.splitext(md_file)[0])
         if os.path.exists(json_file):
             with open(json_file, encoding='utf-8') as f:
                 text_json = json.loads(f.read())
             meta = text_json.get('meta')
-            vocabulary = text_json.get('vocabulary')
+            for item in text_json.get('vocabulary'):
+                vocabulary.append(VocabularyItem(
+                    phrase = item.get('phrase'),
+                    transcription = item.get('transcription'),
+                    lexcat = item.get('category').get('lexical'),
+                    translation = item.get('translation').get(translation)))
         
         data.append(Article(
             meta =  meta,

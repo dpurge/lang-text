@@ -6,5 +6,94 @@
     "status": "ready",
     "tags": []
   },
-  "vocabulary": []
+  "vocabulary": [
+    {
+      "phrase": "矮",
+      "transcription": "ǎi",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "short; low",
+        "pol": "niski"
+      }
+    },
+    {
+      "phrase": "安静",
+      "transcription": "ānjìng",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "quiet; peaceful",
+        "pol": "spokojny"
+      }
+    },
+    {
+      "phrase": "白",
+      "transcription": "bái",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "white; blank",
+        "pol": "biały"
+      }
+    },
+    {
+      "phrase": "饱",
+      "transcription": "bǎo",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "be full",
+        "pol": "być sytym"
+      }
+    },
+    {
+      "phrase": "不错",
+      "transcription": "bùcuò",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "not bad; pretty good; correct",
+        "pol": "niezły"
+      }
+    },
+    {
+      "phrase": "不同",
+      "transcription": "bùtóng",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "different; not the same",
+        "pol": "inny, różny"
+      }
+    },
+    {
+      "phrase": "长",
+      "transcription": "cháng",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "long",
+        "pol": "długi"
+      }
+    },
+    {
+      "phrase": "错",
+      "transcription": "cuò",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "wrong; faulty",
+        "pol": "zły"
+      }
+    }
+  ]
 }

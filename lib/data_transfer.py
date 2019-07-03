@@ -18,3 +18,9 @@ Article = collections.namedtuple('Article',[
     'meta',
     'text',
     'vocabulary'])
+
+VocabularyItem = collections.namedtuple('VocabularyItem',[
+    'phrase',
+    'transcription',
+    'lexcat',
+    'translation'])

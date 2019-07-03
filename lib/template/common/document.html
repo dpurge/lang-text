@@ -8,7 +8,21 @@
 <body>
 {% for article in data %}
 <article>
+<section class="text">
 {{article.text}}
+</section>
+
+{% if article.vocabulary %}
+<section class="vocabulary">
+<h2>Vocabulary</h2>
+<dl>
+{% for item in article.vocabulary %}
+<dt>{{item.phrase}}{% if item.lexcat %} [{{item.lexcat}}]{% endif %}{% if item.transcription %} ({{item.transcription}}){% endif %}</dt>
+<dd>{{item.translation}}</dd>
+{% endfor %}
+</dl>
+</section>
+{% endif %}
 </article>
 {% endfor %}
 </body>
