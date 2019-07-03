@@ -5,6 +5,10 @@ import json
 import markdown
 import jinja2
 
+from weasyprint import HTML
+#from weasyprint import CSS
+#from weasyprint.fonts import FontConfiguration
+
 from .data_transfer import *
 
 def create_directories(*directories):
@@ -48,34 +52,45 @@ def get_document(directory):
             directory = dir,
             files = files)
             
-def export_document(document, tmpdir, outdir):
+def export_document(document, directory):
     
     templateLoader = jinja2.FileSystemLoader(
         searchpath=os.path.join(
             os.path.dirname(__file__), 'template'))
     templateEnv = jinja2.Environment(loader=templateLoader)
     md = markdown.Markdown()
-        
-    template = templateEnv.get_template(
-        "{language}-{format}.html".format(
-            language = document.language,
-            format = document.format))
-            
-    html_file = os.path.join(tmpdir,
-        '{filename}.html'.format(
-            filename = os.path.basename(document.directory)))
     
     data = []
     for md_file in document.files:
         with open(md_file, encoding='utf-8') as f:
-            md_text = f.read()
-        data.append(md.convert(md_text))
+            text = md.convert(f.read())
+        
+        meta = None
+        vocabulary = None
+        json_file = '{name}.json'.format(name = os.path.splitext(md_file)[0])
+        if os.path.exists(json_file):
+            with open(json_file, encoding='utf-8') as f:
+                text_json = json.loads(f.read())
+            meta = text_json.get('meta')
+            vocabulary = text_json.get('vocabulary')
+        
+        data.append(Article(
+            meta =  meta,
+            text = text,
+            vocabulary = vocabulary))
     
-    if not os.path.exists(tmpdir): os.makedirs(tmpdir)
-    with open(html_file, 'w', encoding='utf-8') as f:
-        f.write(template.render(data = data))
+    document_template = templateEnv.get_template(
+        "{language}-document.html".format(
+            language = document.language))
+    html = HTML(string = document_template.render(data = data))
     
-    return html_file
+    if not os.path.exists(directory): os.makedirs(directory)
+    outfile = os.path.join(directory,
+        '{filename}.pdf'.format(
+            filename = os.path.basename(document.directory)))
+    html.write_pdf(outfile)
+    
+    return outfile
 
 def get_language(directory, language):
     

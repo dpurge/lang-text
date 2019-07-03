@@ -13,3 +13,8 @@ Document = collections.namedtuple('Document',[
     'tags',
     'directory',
     'files'])
+
+Article = collections.namedtuple('Article',[
+    'meta',
+    'text',
+    'vocabulary'])

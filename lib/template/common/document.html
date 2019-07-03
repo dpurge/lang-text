@@ -6,8 +6,10 @@
 {%- block style %}{% endblock %}
 </head>
 <body>
-{% for text in data %}
-{{text}}
+{% for article in data %}
+<article>
+{{article.text}}
+</article>
 {% endfor %}
 </body>
 
