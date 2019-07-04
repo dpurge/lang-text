@@ -8,91 +8,467 @@
   },
   "vocabulary": [
     {
-      "phrase": "矮",
-      "transcription": "ǎi",
+      "phrase": "大脑",
+      "transcription": "dànǎo",
       "category": {
-        "lexical": "Adj"
+        "lexical": "N"
       },
       "translation": {
-        "eng": "short; low",
-        "pol": "niski"
+        "eng": "cerebrum; brain",
+        "pol": "mózg"
       }
     },
     {
-      "phrase": "安静",
-      "transcription": "ānjìng",
+      "phrase": "人体",
+      "transcription": "réntǐ",
       "category": {
-        "lexical": "Adj"
+        "lexical": "N"
       },
       "translation": {
-        "eng": "quiet; peaceful",
-        "pol": "spokojny"
+        "eng": "the human body",
+        "pol": "ciało ludzkie"
       }
     },
     {
-      "phrase": "白",
-      "transcription": "bái",
+      "phrase": "指挥",
+      "transcription": "zhǐhuī",
       "category": {
-        "lexical": "Adj"
+        "lexical": ""
       },
       "translation": {
-        "eng": "white; blank",
-        "pol": "biały"
+        "eng": "command; commander",
+        "pol": "zarzdzać"
       }
     },
     {
-      "phrase": "饱",
-      "transcription": "bǎo",
+      "phrase": "中心",
+      "transcription": "zhōngxīn",
       "category": {
-        "lexical": "Adj"
+        "lexical": "N"
       },
       "translation": {
-        "eng": "be full",
-        "pol": "być sytym"
+        "eng": "centre",
+        "pol": "centrum"
       }
     },
     {
-      "phrase": "不错",
-      "transcription": "bùcuò",
+      "phrase": "人类",
+      "transcription": "rénlèi",
       "category": {
-        "lexical": "Adj"
+        "lexical": "N"
       },
       "translation": {
-        "eng": "not bad; pretty good; correct",
-        "pol": "niezły"
+        "eng": "mankind; humankind",
+        "pol": "ludzkość"
       }
     },
     {
-      "phrase": "不同",
-      "transcription": "bùtóng",
+      "phrase": "组成",
+      "transcription": "zǔchéng",
       "category": {
-        "lexical": "Adj"
+        "lexical": ""
       },
       "translation": {
-        "eng": "different; not the same",
-        "pol": "inny, różny"
+        "eng": "form",
+        "pol": ""
       }
     },
     {
-      "phrase": "长",
-      "transcription": "cháng",
+      "phrase": "器官",
+      "transcription": "qìguān",
       "category": {
-        "lexical": "Adj"
+        "lexical": "N"
       },
       "translation": {
-        "eng": "long",
-        "pol": "długi"
+        "eng": "organ",
+        "pol": "organ"
       }
     },
     {
-      "phrase": "错",
-      "transcription": "cuò",
+      "phrase": "复杂",
+      "transcription": "fùzá",
       "category": {
         "lexical": "Adj"
       },
       "translation": {
-        "eng": "wrong; faulty",
-        "pol": "zły"
+        "eng": "complex",
+        "pol": "skomplikowany"
+      }
+    },
+    {
+      "phrase": "而",
+      "transcription": "ér",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "and; but; if",
+        "pol": "i, a; ale; jeśli"
+      }
+    },
+    {
+      "phrase": "精密",
+      "transcription": "jīngmì",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "accurate",
+        "pol": "dokładny"
+      }
+    },
+    {
+      "phrase": "十分",
+      "transcription": "shífēn",
+      "category": {
+        "lexical": "Adv"
+      },
+      "translation": {
+        "eng": "extremely",
+        "pol": "niezwykle"
+      }
+    },
+    {
+      "phrase": "协调",
+      "transcription": "xiétiáo",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "coordinate",
+        "pol": "koordynować"
+      }
+    },
+    {
+      "phrase": "和谐",
+      "transcription": "héxié",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "harmonious",
+        "pol": "harmonijny"
+      }
+    },
+    {
+      "phrase": "有条不紊",
+      "transcription": "yǒutiáobùwěn",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "methodical",
+        "pol": "metodyczny"
+      }
+    },
+    {
+      "phrase": "受",
+      "transcription": "shòu",
+      "category": {
+        "lexical": "V"
+      },
+      "translation": {
+        "eng": "receive; suffer; bear",
+        "pol": "otrzymać; znieść, ścierpieć"
+      }
+    },
+    {
+      "phrase": "神经",
+      "transcription": "shénjīng",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "nerve",
+        "pol": "nerw"
+      }
+    },
+    {
+      "phrase": "系统",
+      "transcription": "xìtǒng",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "system",
+        "pol": "system"
+      }
+    },
+    {
+      "phrase": "司令部",
+      "transcription": "sīlìngbù",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "headquarters",
+        "pol": "centrala"
+      }
+    },
+    {
+      "phrase": "脑",
+      "transcription": "nǎo",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "brain; head",
+        "pol": "mózg; głowa"
+      }
+    },
+    {
+      "phrase": "统",
+      "transcription": "tǒng",
+      "category": {
+        "lexical": "V"
+      },
+      "translation": {
+        "eng": "command",
+        "pol": "zarzdzać; sterować"
+      }
+    },
+    {
+      "phrase": "指挥",
+      "transcription": "zhǐhuī",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "commander; conductor",
+        "pol": "dowódca; dyrygent"
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
+      }
+    },
+	
+	
+    {
+      "phrase": "",
+      "transcription": "",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": ""
       }
     }
   ]

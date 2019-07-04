@@ -9,6 +9,7 @@ Language = collections.namedtuple('Language',[
 Document = collections.namedtuple('Document',[
     'title',
     'subtitle',
+    'gitversion',
     'format',
     'version',
     'language',

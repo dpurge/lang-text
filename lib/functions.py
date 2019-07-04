@@ -5,6 +5,7 @@ import json
 import markdown
 import jinja2
 import datetime
+import subprocess
 
 from weasyprint import HTML
 #from weasyprint import CSS
@@ -48,6 +49,7 @@ def get_document(directory):
         yield Document(
             title = doc['data']['title'],
             subtitle = doc.get('data').get('subtitle'),
+            gitversion = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip().decode("utf-8"),
             format = doc['meta']['format'],
             version = doc['meta']['version'],
             language = doc['meta']['language'],

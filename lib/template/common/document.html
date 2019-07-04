@@ -8,7 +8,9 @@
 <body>
 <header>
 <div id="document-title">{{document.title}}</div>
-<div id="document-subtitle">{{document.subtitle}}</div>
+{% if document.subtitle %}<div id="document-subtitle">{{document.subtitle}}</div>{% endif %}
+<br/><br/>
+{% if document.gitversion %}<div id="document-gitversion">{{document.gitversion}}</div>{% endif %}
 </header>
 {% for article in data %}
 <article>
@@ -21,7 +23,9 @@
 <h2>Vocabulary</h2>
 <dl>
 {% for item in article.vocabulary %}
-<dt>{{item.phrase}}{% if item.lexcat %} <b>{{item.lexcat}}</b>{% endif %}{% if item.transcription %} <i>{{item.transcription}}</i>{% endif %}</dt>
+<dt><span class="phrase">{{item.phrase}}</span>
+{%- if item.lexcat %} <span class="lexcat">{{item.lexcat}}</span>{% endif -%}
+{% if item.transcription %} <i>{{item.transcription}}</i>{% endif %}</dt>
 <dd>{{item.translation}}</dd>
 {% endfor %}
 </dl>
