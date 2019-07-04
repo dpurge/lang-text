@@ -37,7 +37,7 @@
       },
       "translation": {
         "eng": "command; commander",
-        "pol": "zarzdzać"
+        "pol": "zarządzać"
       }
     },
     {
@@ -224,7 +224,7 @@
       },
       "translation": {
         "eng": "command",
-        "pol": "zarzdzać; sterować"
+        "pol": "zarządzać; sterować"
       }
     },
     {
@@ -239,14 +239,234 @@
       }
     },
     {
-      "phrase": "",
-      "transcription": "",
+      "phrase": "位于",
+      "transcription": "wèiyú",
+      "category": {
+        "lexical": "V"
+      },
+      "translation": {
+        "eng": "be located",
+        "pol": "być położonym"
+      }
+    },
+    {
+      "phrase": "端",
+      "transcription": "duān",
       "category": {
         "lexical": ""
       },
       "translation": {
-        "eng": "",
+        "eng": "end",
+        "pol": "koniec"
+      }
+    },
+    {
+      "phrase": "形状",
+      "transcription": "xíngzhuàng",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "shape",
+        "pol": "kształt"
+      }
+    },
+    {
+      "phrase": "核桃",
+      "transcription": "hétao",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "walnut; nut",
+        "pol": "orzech"
+      }
+    },
+    {
+      "phrase": "仁",
+      "transcription": "rén",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "benevolence; kernel",
+        "pol": "łaskawość; jądro"
+      }
+    },
+    {
+      "phrase": "体积",
+      "transcription": "tǐjī",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "volume",
+        "pol": "objętość"
+      }
+    },
+    {
+      "phrase": "占据",
+      "transcription": "zhànjù",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "occupy",
+        "pol": "okupować; zajmować"
+      }
+    },
+    {
+      "phrase": "大部分",
+      "transcription": "dàbùfen",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "the bulk of",
+        "pol": "większość"
+      }
+    },
+    {
+      "phrase": "通常",
+      "transcription": "tōngcháng",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "normal circumstances",
+        "pol": "zazwyczaj"
+      }
+    },
+    {
+      "phrase": "分为",
+      "transcription": "fēnwéi",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "be split into",
+        "pol": "być podzielonym na"
+      }
+    },
+    {
+      "phrase": "称为",
+      "transcription": "chēngwéi",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "be called; be known as",
+        "pol": "być nazywanym"
+      }
+    },
+    {
+      "phrase": "半球",
+      "transcription": "bànqiú",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "hemisphere",
+        "pol": "półkula"
+      }
+    },
+    {
+      "phrase": "表面",
+      "transcription": "biǎomiàn",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "surface",
+        "pol": "powierzchnia"
+      }
+    },
+    {
+      "phrase": "皮质",
+      "transcription": "pízhì",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "cerebral cortex",
+        "pol": "kora mózgowa"
+      }
+    },
+    {
+      "phrase": "额叶",
+      "transcription": "é yè",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "frontal lobe",
+        "pol": "płat czołowy"
+      }
+    },
+    {
+      "phrase": "顶叶",
+      "transcription": "dǐng yè",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": " parietal lobe",
+        "pol": "płat boczny"
+      }
+    },
+    {
+      "phrase": "枕叶",
+      "transcription": "zhěn yè",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "occipital lobe",
         "pol": ""
+      }
+    },
+    {
+      "phrase": "颞叶",
+      "transcription": "niè yè",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "temporal lobe",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "如",
+      "transcription": "rú",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "comply with; as; if",
+        "pol": ""
+      }
+    },
+    {
+      "phrase": "后部",
+      "transcription": "hòubù",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "back, rear",
+        "pol": "tył"
+      }
+    },
+    {
+      "phrase": "为",
+      "transcription": "wèi",
+      "category": {
+        "lexical": "V"
+      },
+      "translation": {
+        "eng": "be; act as",
+        "pol": "być; służyć jako"
       }
     },
     {
