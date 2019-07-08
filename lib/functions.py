@@ -12,6 +12,7 @@ from weasyprint import HTML
 #from weasyprint.fonts import FontConfiguration
 
 from .data_transfer import *
+from .lang_markdown import *
 
 def create_directories(*directories):
     
@@ -63,7 +64,7 @@ def export_document(document, directory, translation):
         searchpath=os.path.join(
             os.path.dirname(__file__), 'template'))
     templateEnv = jinja2.Environment(loader=templateLoader)
-    md = markdown.Markdown()
+    md = markdown.Markdown(extensions=[LangText()])
     
     data = []
     for md_file in document.files:

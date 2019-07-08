@@ -8,6 +8,25 @@ tmp_dir = os.path.abspath('./tmp')
 out_dir = os.path.abspath('./out')
 
 @task
+def test(c):
+    import markdown
+    from lib.lang_markdown import LangText
+    text = """
+# Title
+
+~~~start-dialog~~~   
+Zenek:
+  Ja to mówię, Zenek.
+
+Franek:
+  Ja to mówię, Franek.
+~~~end-dialog~~~  
+
+Paragraph text.
+    """
+    print(markdown.markdown(text, extensions=[LangText()]))
+
+@task
 def clean(c, output = False):
     directories = [tmp_dir]
     if output:
