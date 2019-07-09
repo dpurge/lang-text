@@ -14,6 +14,9 @@ def test(c):
     text = """
 # Title
 
+~~~start-dialog~~~
+~~~end-dialog~~~
+
 ~~~start-dialog~~~   
 
 Zenek:
