@@ -19,25 +19,25 @@ def test(c):
 
 ~~~start-dialog~~~   
 
-Zenek:
+[Zenek]:
   Ja to mówię, Zenek.
   Byłem tu.
   
   Następny paragraf.
 
-Franek:
+[Franek]:
   Ja to mówię, Franek.
 ~~~end-dialog~~~  
 
 Paragraph text.
 
 ~~~start-dialog~~~   
-Zenek:
+[Zenek]:
   Ja to mówię, Zenek.
 
 (Krótki komentarz)
 
-Franek:
+[Franek]:
   Ja to mówię, Franek.
 ~~~end-dialog~~~  
 
@@ -51,6 +51,8 @@ Paragraph text.
 
 --
   Ja to mówię, Franek.
+  
+  Powtarzam.
 ~~~end-dialog~~~
     """
     print(markdown.markdown(text, extensions=[LangText()]))

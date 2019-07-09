@@ -99,6 +99,14 @@ def export_document(document, directory, translation):
             data = data))
     
     if not os.path.exists(directory): os.makedirs(directory)
+    # start debug
+    with open(os.path.join(directory,
+        '{filename}.html'.format(
+            filename = os.path.basename(document.directory))), 'w', encoding="utf-8") as f:
+        f.write(document_template.render(
+            document = document,
+            data = data))
+    # end debug
     outfile = os.path.join(directory,
         '{filename}.pdf'.format(
             filename = os.path.basename(document.directory)))
