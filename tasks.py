@@ -15,14 +15,40 @@ def test(c):
 # Title
 
 ~~~start-dialog~~~   
+
 Zenek:
   Ja to mówię, Zenek.
+  Byłem tu.
+  
+  Następny paragraf.
 
 Franek:
   Ja to mówię, Franek.
 ~~~end-dialog~~~  
 
 Paragraph text.
+
+~~~start-dialog~~~   
+Zenek:
+  Ja to mówię, Zenek.
+
+(Krótki komentarz)
+
+Franek:
+  Ja to mówię, Franek.
+~~~end-dialog~~~  
+
+Paragraph text.
+
+~~~start-dialog~~~
+--
+  Ja to mówię, Zenek.
+
+(Krótki komentarz)
+
+--
+  Ja to mówię, Franek.
+~~~end-dialog~~~
     """
     print(markdown.markdown(text, extensions=[LangText()]))
 
