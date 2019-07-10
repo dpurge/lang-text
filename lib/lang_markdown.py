@@ -3,10 +3,44 @@ import re
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
+from .html_snippets import DialogAnonPhraseSnippet, DialogNamedPhraseSnippet
+
 class LangText(Extension):
     def extendMarkdown(self, md, md_globals):
         md.registerExtension(self)
-        md.preprocessors.register(DialogBlockPreprocessor(md), 'dialog_block', 25)
+        md.preprocessors.register(TextBlockPreprocessor(md), 'lang_text_block', 25)
+        md.preprocessors.register(DialogBlockPreprocessor(md), 'lang_dialog_block', 25)
+        
+class TextBlockPreprocessor(Preprocessor):
+
+    _pattern = re.compile(r"""
+    ^~~~start-text~~~[ ]*\n
+    (?P<text>.*?)(?<=\n)
+    ~~~end-text~~~
+    [ ]*$""", re.MULTILINE | re.DOTALL | re.VERBOSE)
+    
+    _snippet = r"""{before_text}<section class="text">{rendered_text}</section>{after_text}"""
+
+    def __init__(self, md):
+        super(TextBlockPreprocessor, self).__init__(md)
+        self._md = md
+    
+    def run(self, lines):
+        text = "\n".join(lines)
+        while True:
+            m = self._pattern.search(text)
+            if m:
+                rendered_text = self.render_text(m.group('text'))
+                text = self._snippet.format(
+                    before_text = text[:m.start()],
+                    rendered_text = rendered_text,
+                    after_text = text[m.end():])
+            else:
+                break
+        return text.split("\n")
+        
+    def render_text(self, text):
+        return self.md.convert(text)
 
 class DialogBlockPreprocessor(Preprocessor):
 
@@ -68,15 +102,9 @@ class DialogBlockPreprocessor(Preprocessor):
                     else:
                         break
                     i += 1
-                yield '''
-<div class="phrase-anonymous">
-<div class="phrase-separator">--</div>
-<div class="phrase-content">{content}</div>
-</div>'''.format(
+                yield DialogAnonPhraseSnippet.format(
                         content = self.render_buffer(buffer))
                 buffer = []
-                #if i < maxlines:
-                #    buffer.append(line)
             
             elif line.startswith('[') \
                 and line.endswith(']:') \
@@ -95,20 +123,11 @@ class DialogBlockPreprocessor(Preprocessor):
                     else:
                         break
                     i += 1
-                yield '''\
-<div class="phrase-named">
-<div class="phrase-separator">\
-<span class="person-name">{person}</span>\
-<span class="separator">{separator}</span>\
-</div>
-<div class="phrase-content">{content}</div>
-</div>'''.format(
+                yield DialogNamedPhraseSnippet.format(
                         person = person,
                         separator = separator,
                         content = self.render_buffer(buffer))
                 buffer = []
-                #if i < maxlines:
-                #    buffer.append(line)
             
             else:
                 buffer.append(line)
