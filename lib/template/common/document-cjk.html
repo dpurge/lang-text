@@ -7,6 +7,10 @@
   margin: 1.5cm; /* Set margin on each page */
 }
 
+body {
+  font-family: Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
+}
+
 #document-title {
   text-align: center;
   font-size: 300%;
@@ -25,6 +29,14 @@ article {
   page-break-before: always;
 }
 
+section.text{
+  font-size: 120%;
+}
+
+section.dialog {
+  font-size: 120%;
+}
+
 section.vocabulary dl {
   column-count: 2;
 }
@@ -32,5 +44,31 @@ section.vocabulary dl {
 span.lexcat {
   font-weight: bold;
 }
+
+div.phrase-named {
+  order: 0;
+  display: flex;
+}
+
+div.phrase-named > div.phrase-separator {
+  order: 1;
+  display: block;
+  width: 15%;
+  //border: 1px solid rgba(0,0,0,.2);
+}
+
+div.phrase-named > div.phrase-content {
+  order: 2;
+  display: block;
+  width: 85%;
+  //border: 1px solid rgba(0,0,0,.2);
+}
+
+div.phrase-content p {
+  margin-top: 0px;
+}
+
+//div.phrase-content p:nth-of-type(1) {
+//}
 </style>
 {%- endblock %}
