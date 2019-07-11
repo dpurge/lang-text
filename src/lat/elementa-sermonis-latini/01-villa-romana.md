@@ -2,4 +2,18 @@
 
 Ecce villa romana.
 En porta et ostium.
-Porro impluvium est et peristylum.
+Hic ianitor est et canis.
+Porro atrium et impluvium, ubi aqua est.
+Iuxta cubicula sunt.
+Atrium amplum est, cubiculum est parvum.
+
+Ibi alterum ostium est et peristylum.
+"Peristylum" vocabulum Graecum est.
+Ecce columna marmorea et statua.
+Statua alba est.
+Etiam pavimentum marmoreum est.
+At pavimentum non est album, sed nigrum.
+Prope hortus est.
+Ecce arbor et flores.
+Arbor alta est, flos non est altus.
+At flos pulcher est.

@@ -1,0 +1,28 @@
+# Villam spectamus
+
+Titus et Valeria novam villam habent.
+Publius et Claudia properant, nam villam spectare cupiunt.
+Iam ante ostium stant, ianitorem et canem vident.
+
+Valeria puerum et puellam videt et clamat:
+"Tite, propera!
+Publius et Claudia ad nos veniunt".
+
+Titus venit et dicit:
+"Salvete!"
+
+"Et tu salve!" - respondet Publius.
+"Salve, Valeria!" addit.
+
+Tum puer et puella intrant.
+Publius atrium et peristylum laudat.
+At Claudiam hortus magis delectat.
+
+"Publi" - clamat - "vides arborem altam?
+Certe fructum bonum praebet".
+
+Titus gaudet et dicit:
+"Gaudeo, quod domum nostram laudatis".
+
+"Et nobis gratum est" - respondet Claudia - "ad vos venire, vobiscum manere, villam vestram laudare.
+Nunc salutem vobis dicere cupimus".
