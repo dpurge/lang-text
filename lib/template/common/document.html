@@ -12,23 +12,9 @@
 <br/><br/>
 {% if document.gitversion %}<div id="document-gitversion">{{document.gitversion}}</div>{% endif %}
 </header>
-{% for article in data %}
+{% for text in data %}
 <article>
-{{article.text}}
-
-{% if article.vocabulary %}
-<section class="vocabulary">
-<h2>Vocabulary</h2>
-<dl>
-{% for item in article.vocabulary %}
-<dt><span class="phrase">{{item.phrase}}</span>
-{%- if item.lexcat %} <span class="lexcat">{{item.lexcat}}</span>{% endif -%}
-{% if item.transcription %} <i>{{item.transcription}}</i>{% endif %}</dt>
-<dd>{{item.translation}}</dd>
-{% endfor %}
-</dl>
-</section>
-{% endif %}
+{{text}}
 </article>
 {% endfor %}
 </body>

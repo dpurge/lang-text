@@ -17,10 +17,10 @@ Document = collections.namedtuple('Document',[
     'directory',
     'files'])
 
-Article = collections.namedtuple('Article',[
-    'meta',
-    'text',
-    'vocabulary'])
+#Article = collections.namedtuple('Article',[
+#    'meta',
+#    'text',
+#    'vocabulary'])
 
 VocabularyItem = collections.namedtuple('VocabularyItem',[
     'phrase',

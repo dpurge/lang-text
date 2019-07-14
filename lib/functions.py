@@ -64,31 +64,37 @@ def export_document(document, directory, translation):
         searchpath=os.path.join(
             os.path.dirname(__file__), 'template'))
     templateEnv = jinja2.Environment(loader=templateLoader)
-    md = markdown.Markdown(extensions=[LangText()])
+    md = markdown.Markdown(extensions=['tables', LangText()])
+    #print("Registered extensions: ", md.registeredExtensions)
     
     data = []
     for md_file in document.files:
         with open(md_file, encoding='utf-8') as f:
+            md.Meta = {
+                'translation': translation,
+                'vocabulary': []
+            }
+            
+            meta_file = '{name}.json'.format(name = os.path.splitext(md_file)[0])
+            if os.path.exists(meta_file):
+                with open(meta_file, encoding='utf-8') as m:
+                    meta = json.loads(m.read())
+                    
+                    for key in meta.get('meta'):
+                        md.Meta[key] = meta.get('meta').get(key)
+                    
+                    if 'vocabulary' in meta:
+                        for item in meta.get('vocabulary'):
+                            md.Meta['vocabulary'].append(VocabularyItem(
+                                phrase = item.get('phrase'),
+                                transcription = item.get('transcription'),
+                                lexcat = item.get('category').get('lexical'),
+                                translation = item.get('translation').get(translation)))
+            
             text = md.convert(f.read())
+            md.reset()
         
-        meta = None
-        vocabulary = []
-        json_file = '{name}.json'.format(name = os.path.splitext(md_file)[0])
-        if os.path.exists(json_file):
-            with open(json_file, encoding='utf-8') as f:
-                text_json = json.loads(f.read())
-            meta = text_json.get('meta')
-            for item in text_json.get('vocabulary'):
-                vocabulary.append(VocabularyItem(
-                    phrase = item.get('phrase'),
-                    transcription = item.get('transcription'),
-                    lexcat = item.get('category').get('lexical'),
-                    translation = item.get('translation').get(translation)))
-        
-        data.append(Article(
-            meta =  meta,
-            text = text,
-            vocabulary = vocabulary))
+        data.append(text)
     
     document_template = templateEnv.get_template(
         "{language}-document.html".format(

@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "format": "article",
+    "version": 1,
+    "language": "lat",
+    "status": "ready",
+    "tags": []
+  },
+  "vocabulary": [
+    {
+      "phrase": "lectio",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "czytanka"
+      }
+    },
+    {
+      "phrase": "primus",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "pierwszy"
+      }
+    },
+    {
+      "phrase": "villa",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "willa"
+      }
+    },
+    {
+      "phrase": "Roma",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "Rzym"
+      }
+    },
+    {
+      "phrase": "Romanus",
+      "category": {
+        "lexical": "Adj"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "rzymski"
+      }
+    },
+    {
+      "phrase": "ecce",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "oto"
+      }
+    },
+    {
+      "phrase": "en",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "oto"
+      }
+    },
+    {
+      "phrase": "porta",
+      "category": {
+        "lexical": "N"
+      },
+      "translation": {
+        "eng": "",
+        "pol": "brama"
+      }
+    },
+    {
+      "phrase": "et",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "i"
+      }
+    },
+    {
+      "phrase": "ostium",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "wejście"
+      }
+    },
+    {
+      "phrase": "hic",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "tutaj"
+      }
+    },
+    {
+      "phrase": "ianitor",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "odźwierny"
+      }
+    },
+    {
+      "phrase": "est",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "jest"
+      }
+    },
+    {
+      "phrase": "canis",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "pies"
+      }
+    },
+    {
+      "phrase": "porro",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "dalej"
+      }
+    },
+    {
+      "phrase": "atrium",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "sala"
+      }
+    },
+    {
+      "phrase": "impluvium",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "basen"
+      }
+    },
+    {
+      "phrase": "ubi",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "gdzie"
+      }
+    },
+    {
+      "phrase": "aqua",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "woda"
+      }
+    },
+    {
+      "phrase": "iuxta",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "obok"
+      }
+    },
+    {
+      "phrase": "cubiculum",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "sypialnia"
+      }
+    },
+    {
+      "phrase": "sunt",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "są"
+      }
+    },
+    {
+      "phrase": "amplus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "obszerny"
+      }
+    },
+    {
+      "phrase": "parvus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "mały"
+      }
+    },
+    {
+      "phrase": "ibi",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "tam"
+      }
+    },
+    {
+      "phrase": "alter",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "drugi"
+      }
+    },
+    {
+      "phrase": "peristylum",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "kolumnada"
+      }
+    },
+    {
+      "phrase": "vocabulum",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "słowo, wyraz"
+      }
+    },
+    {
+      "phrase": "Graecus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "grecki"
+      }
+    },
+    {
+      "phrase": "columna",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "kolumna"
+      }
+    },
+    {
+      "phrase": "marmoreus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "marmurowy"
+      }
+    },
+    {
+      "phrase": "statua",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "posąg"
+      }
+    },
+    {
+      "phrase": "albus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "biały"
+      }
+    },
+    {
+      "phrase": "etiam",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "także"
+      }
+    },
+    {
+      "phrase": "pavimentum",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "posadzka"
+      }
+    },
+    {
+      "phrase": "at",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "natomiast, lecz"
+      }
+    },
+    {
+      "phrase": "non",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "nie"
+      }
+    },
+    {
+      "phrase": "sed",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "lecz"
+      }
+    },
+    {
+      "phrase": "niger",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "czarny"
+      }
+    },
+    {
+      "phrase": "prope",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "blisko"
+      }
+    },
+    {
+      "phrase": "hortus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "ogród"
+      }
+    },
+    {
+      "phrase": "arbor",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "drzewo"
+      }
+    },
+    {
+      "phrase": "flos",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "kwiat"
+      }
+    },
+    {
+      "phrase": "altus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "wysoki"
+      }
+    },
+    {
+      "phrase": "pulcher",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "piękny"
+      }
+    },
+    {
+      "phrase": "aeternus",
+      "category": {
+        "lexical": ""
+      },
+      "translation": {
+        "eng": "",
+        "pol": "wieczny"
+      }
+    }
+  ]
+}

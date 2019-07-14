@@ -10,6 +10,7 @@ class LangText(Extension):
         md.registerExtension(self)
         md.preprocessors.register(TextBlockPreprocessor(md), 'lang_text_block', 25)
         md.preprocessors.register(DialogBlockPreprocessor(md), 'lang_dialog_block', 25)
+        md.preprocessors.register(VocabularyBlockPreprocessor(md), 'lang_vocabulary_block', 25)
         
 class TextBlockPreprocessor(Preprocessor):
 
@@ -41,6 +42,68 @@ class TextBlockPreprocessor(Preprocessor):
         
     def render_text(self, text):
         return self.md.convert(text)
+
+
+class VocabularyBlockPreprocessor(Preprocessor):
+
+    _pattern = re.compile(r"""
+    ^~~~start-vocabulary~~~[ ]*\n
+    (?P<text>.*?)(?<=\n)
+    ~~~end-vocabulary~~~
+    [ ]*$""", re.MULTILINE | re.DOTALL | re.VERBOSE)
+    
+    _snippet = r"""{before_text}<section class="vocabulary">{rendered_text}</section>{after_text}"""
+
+    def __init__(self, md):
+        super(VocabularyBlockPreprocessor, self).__init__(md)
+        self._md = md
+    
+    def run(self, lines):
+        text = "\n".join(lines)
+        while True:
+            m = self._pattern.search(text)
+            if m:
+                rendered_text = self.render_text(m.group('text'))
+                text = self._snippet.format(
+                    before_text = text[:m.start()],
+                    rendered_text = rendered_text,
+                    after_text = text[m.end():])
+            else:
+                break
+        return text.split("\n")
+        
+    def render_text(self, text):
+        rendered_text = ''
+        if text:
+            rendered_text += self.md.convert(text)
+        if 'vocabulary' in self._md.Meta:
+            items = []
+            for item in self._md.Meta['vocabulary']:
+                if not item.phrase:
+                    continue
+                buffer = []
+                buffer.append('<dt class="vocabulary-item-term">')
+                buffer.append(
+                    '<span class="vocabulary-item-phrase">{}</span>'.format(
+                        item.phrase))
+                if item.lexcat:
+                    buffer.append(
+                        ' <span class="vocabulary-item-lexcat">{}</span>'.format(
+                            item.lexcat))
+                if item.transcription:
+                    buffer.append(
+                        ' <span class="vocabulary-item-transcription">[{}]</span>'.format(
+                            item.transcription))
+                buffer.append('</dt>')
+                buffer.append('<dd class="vocabulary-item-definition">')
+                buffer.append(item.translation)
+                buffer.append('</dd>')
+                
+                items.append(''.join(buffer))
+                
+            rendered_text += '<dl class="vocabulary-data">{}</dl>'.format(
+                '\n'.join(items))
+        return rendered_text
 
 class DialogBlockPreprocessor(Preprocessor):
 
